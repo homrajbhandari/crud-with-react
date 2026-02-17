@@ -1,17 +1,13 @@
-import React from 'react';
-import SingleItem from './components/SingleItem';
+import Items from "./components/Items";
+import { groceryItems } from "./data/groceryItems";
+import "./App.css";
 
-function App() {
-  const item = {
-    name: "learn react",
-    completed: false,
-  };
-
+const App = () => {
   return (
-    <div>
-      <SingleItem item={item} />
-    </div>
+    <section className="section-center">
+      <Items items={groceryItems} />
+    </section>
   );
-}
+};
 
 export default App;
