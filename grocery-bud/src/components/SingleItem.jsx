@@ -1,7 +1,7 @@
 import { FiEdit, FiTrash2 } from "react-icons/fi";
 import "./SingleItem.css";
 
-const SingleItem = ({ item, editCompleted ,removeItem }) => {
+const SingleItem = ({ item, editCompleted ,removeItem, setEditId }) => {
   return (
     <div className="single-item">
       <input type="checkbox" checked={item.completed} onChange={() => editCompleted(item.id)} />
@@ -14,7 +14,7 @@ const SingleItem = ({ item, editCompleted ,removeItem }) => {
         {item.name}
       </p>
 
-      <button className="btn icon-btn" type="button" onClick={() => null}>
+      <button className="btn icon-btn" type="button" onClick={() => setEditId(item.id)}>
         <FiEdit size={18} />
       </button>
 
