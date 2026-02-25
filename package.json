@@ -2,7 +2,6 @@
   "name": "grocery-bud",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://homrajbhandari.github.io/crud-with-react",
   "type": "module",
   "scripts": {
     "dev": "vite",
